@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kib-vn-Hbz">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--How It Works View Controller-->
+        <scene sceneID="k5J-Cn-poF">
+            <objects>
+                <viewController storyboardIdentifier="StepOne" useStoryboardIdentifierAsRestorationIdentifier="YES" id="b0P-Lg-PSJ" customClass="HowItWorksViewController" customModule="TrainersSociety" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="go3-9P-jD2"/>
+                        <viewControllerLayoutGuide type="bottom" id="zXN-o7-SSM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YWG-qf-qbX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. SEARCH FOR A TRAINER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BX-sg-nBS">
+                                <rect key="frame" x="79" y="458.33333333333331" width="256" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="alD-KP-0hj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="UserHIW1" translatesAutoresizingMaskIntoConstraints="NO" id="h5C-MM-4Bq">
+                                <rect key="frame" x="16" y="50" width="382.66666666666669" height="372.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h5C-MM-4Bq" secondAttribute="height" multiplier="344:335" id="sMe-gW-FyR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the search tab to locate a trainer who can help you achieve your personal goals." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCg-le-wMh">
+                                <rect key="frame" x="14" y="492.33333333333337" width="385" height="22.000000000000114"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1488880128" green="0.33255208330000002" blue="0.23967420380000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="h5C-MM-4Bq" firstAttribute="leading" secondItem="YWG-qf-qbX" secondAttribute="leading" constant="15.5" id="8Dw-IB-y3W"/>
+                            <constraint firstItem="h5C-MM-4Bq" firstAttribute="top" secondItem="go3-9P-jD2" secondAttribute="bottom" constant="30" id="Gjh-py-Phv"/>
+                            <constraint firstItem="BCg-le-wMh" firstAttribute="centerX" secondItem="YWG-qf-qbX" secondAttribute="centerX" id="LBe-yd-rE6"/>
+                            <constraint firstAttribute="trailing" secondItem="BCg-le-wMh" secondAttribute="trailing" constant="15" id="OsW-fH-oNE"/>
+                            <constraint firstAttribute="trailing" secondItem="h5C-MM-4Bq" secondAttribute="trailing" constant="15.5" id="Su3-WR-Rue"/>
+                            <constraint firstItem="3BX-sg-nBS" firstAttribute="centerX" secondItem="YWG-qf-qbX" secondAttribute="centerX" id="VxI-SM-5e5"/>
+                            <constraint firstItem="h5C-MM-4Bq" firstAttribute="centerX" secondItem="YWG-qf-qbX" secondAttribute="centerX" id="lIp-Ec-zfY"/>
+                            <constraint firstItem="BCg-le-wMh" firstAttribute="leading" secondItem="YWG-qf-qbX" secondAttribute="leading" constant="14" id="mow-BD-CO9"/>
+                            <constraint firstItem="3BX-sg-nBS" firstAttribute="top" secondItem="h5C-MM-4Bq" secondAttribute="bottom" constant="36" id="uJL-D6-rZF"/>
+                            <constraint firstItem="BCg-le-wMh" firstAttribute="top" secondItem="3BX-sg-nBS" secondAttribute="bottom" constant="8" id="xPd-fw-kBz"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="flM-BI-FAm"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahY-Rp-Cma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1850.4000000000001" y="773.16341829085468"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l0T-z8-9Mi">
+            <objects>
+                <navigationController id="Kib-vn-Hbz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1Pn-fj-WCV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="er8-9W-D6f" kind="relationship" relationship="rootViewController" id="w0Y-AV-FGN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cG-Q0-Fwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1850" y="66"/>
+        </scene>
+        <!--How It Works Page View Controller-->
+        <scene sceneID="1ME-RP-cPK">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="er8-9W-D6f" customClass="HowItWorksPageViewController" customModule="TrainersSociety" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dzo-js-oeh">
+                        <barButtonItem key="leftBarButtonItem" image="blkm" id="sBi-pc-yl1">
+                            <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="sBi-pc-yl1" id="9Ry-LY-drr"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxA-RE-Izc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1046" y="67"/>
+        </scene>
+        <!--How It Works View Controller2-->
+        <scene sceneID="UY3-1p-YQt">
+            <objects>
+                <viewController storyboardIdentifier="StepTwo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q60-H5-cJf" customClass="HowItWorksViewController2" customModule="TrainersSociety" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vhr-AG-hQt"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Ks-gR-FVb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b9f-uc-tjX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. BOOK A TRAINING SESSION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PP9-Jd-MFr">
+                                <rect key="frame" x="40.666666666666657" y="459.33333333333331" width="333" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="333" id="ptp-2D-lTP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="UserHIW2" translatesAutoresizingMaskIntoConstraints="NO" id="fRD-5a-A6C">
+                                <rect key="frame" x="15" y="50" width="383.66666666666669" height="372.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fRD-5a-A6C" secondAttribute="height" multiplier="344:335" constant="1.026865671641815" id="hlC-7f-CWH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Once you find a trainer, view their schedule for available workout times and book your session." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qz-Tb-62J">
+                                <rect key="frame" x="33" y="493" width="309" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1488880128" green="0.33255208330000002" blue="0.23967420380000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fRD-5a-A6C" firstAttribute="top" secondItem="vhr-AG-hQt" secondAttribute="bottom" constant="30" id="5lK-Sa-jE1"/>
+                            <constraint firstItem="fRD-5a-A6C" firstAttribute="leading" secondItem="b9f-uc-tjX" secondAttribute="leading" constant="15.5" id="AzH-oZ-N5G"/>
+                            <constraint firstItem="0Qz-Tb-62J" firstAttribute="centerX" secondItem="PP9-Jd-MFr" secondAttribute="centerX" id="OIZ-nO-YLO"/>
+                            <constraint firstItem="PP9-Jd-MFr" firstAttribute="top" secondItem="fRD-5a-A6C" secondAttribute="bottom" constant="37" id="VdK-Lp-8aO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Qz-Tb-62J" secondAttribute="trailing" constant="17" id="Vtv-eT-AnM"/>
+                            <constraint firstItem="fRD-5a-A6C" firstAttribute="centerX" secondItem="b9f-uc-tjX" secondAttribute="centerX" id="XH6-9P-eg1"/>
+                            <constraint firstAttribute="trailing" secondItem="fRD-5a-A6C" secondAttribute="trailing" constant="15.5" id="cbN-8d-jxs"/>
+                            <constraint firstItem="PP9-Jd-MFr" firstAttribute="centerX" secondItem="b9f-uc-tjX" secondAttribute="centerX" id="f6X-3a-yf0"/>
+                            <constraint firstItem="0Qz-Tb-62J" firstAttribute="leading" secondItem="b9f-uc-tjX" secondAttribute="leadingMargin" constant="17" id="gfl-Ww-frJ"/>
+                            <constraint firstItem="0Qz-Tb-62J" firstAttribute="top" secondItem="PP9-Jd-MFr" secondAttribute="bottom" constant="4" id="pme-kv-bI3"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cZO-Tn-OUK"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8A-8f-SNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1098.4000000000001" y="772.26386806596713"/>
+        </scene>
+        <!--How It Works View Controller2-->
+        <scene sceneID="qEf-wi-c7u">
+            <objects>
+                <viewController storyboardIdentifier="StepThree" useStoryboardIdentifierAsRestorationIdentifier="YES" id="soQ-Bm-CDK" customClass="HowItWorksViewController2" customModule="TrainersSociety" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6kB-69-ZrX"/>
+                        <viewControllerLayoutGuide type="bottom" id="H2U-PA-7rK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1vq-qf-01K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. SHOW UP READY TO TRAIN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDA-VK-6dN">
+                                <rect key="frame" x="62.666666666666657" y="450" width="289" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="HhT-G2-sfG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="UserHIW3" translatesAutoresizingMaskIntoConstraints="NO" id="K6P-Vz-f90">
+                                <rect key="frame" x="20" y="70" width="374" height="370"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K6P-Vz-f90" secondAttribute="height" multiplier="343:339" id="Ppx-dL-OmT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up a where and when. Pay your trainer upon arrival and be ready to workout!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYJ-Zg-vHa">
+                                <rect key="frame" x="36" y="484" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="CSR-sH-btc"/>
+                                    <constraint firstAttribute="width" constant="343" id="JRm-Vd-jN7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1488880128" green="0.33255208330000002" blue="0.23967420380000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KDA-VK-6dN" firstAttribute="centerX" secondItem="1vq-qf-01K" secondAttribute="centerX" id="0Ob-ac-SqH"/>
+                            <constraint firstItem="ZYJ-Zg-vHa" firstAttribute="top" secondItem="KDA-VK-6dN" secondAttribute="bottom" constant="8" id="4JO-qv-awW"/>
+                            <constraint firstItem="K6P-Vz-f90" firstAttribute="top" secondItem="6kB-69-ZrX" secondAttribute="bottom" constant="50" id="696-ya-NkQ"/>
+                            <constraint firstItem="ZYJ-Zg-vHa" firstAttribute="leading" secondItem="1vq-qf-01K" secondAttribute="leadingMargin" constant="16" id="FCI-ez-Kq0"/>
+                            <constraint firstItem="ZYJ-Zg-vHa" firstAttribute="trailing" secondItem="1vq-qf-01K" secondAttribute="trailingMargin" constant="-15" id="MbG-LJ-6UF"/>
+                            <constraint firstItem="K6P-Vz-f90" firstAttribute="trailing" secondItem="1vq-qf-01K" secondAttribute="trailingMargin" id="TmV-QR-1EJ"/>
+                            <constraint firstItem="K6P-Vz-f90" firstAttribute="leading" secondItem="1vq-qf-01K" secondAttribute="leadingMargin" id="iEX-mE-4Qu"/>
+                            <constraint firstItem="ZYJ-Zg-vHa" firstAttribute="centerX" secondItem="1vq-qf-01K" secondAttribute="centerX" constant="0.5" id="j6k-Ea-5We"/>
+                            <constraint firstItem="KDA-VK-6dN" firstAttribute="top" secondItem="K6P-Vz-f90" secondAttribute="bottom" constant="10" id="koR-Yd-Sv0"/>
+                            <constraint firstItem="K6P-Vz-f90" firstAttribute="centerX" secondItem="1vq-qf-01K" secondAttribute="centerX" id="tFT-Vd-qrP"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="015-jC-X6M"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ChA-8Z-VF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359.19999999999999" y="772.26386806596713"/>
+        </scene>
+        <!--How It Works View Controller-->
+        <scene sceneID="bDb-wo-CpG">
+            <objects>
+                <viewController storyboardIdentifier="StepOneTrainer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T9Q-yP-QQj" customClass="HowItWorksViewController" customModule="TrainersSociety" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nxK-RM-1bF"/>
+                        <viewControllerLayoutGuide type="bottom" id="LcU-YJ-XcN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tqw-q6-Ysl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. SETUP YOUR PROFILE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMs-Bc-Nt3">
+                                <rect key="frame" x="79" y="434.33333333333331" width="256" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="Pla-vT-DbL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="TrainerHIW1" translatesAutoresizingMaskIntoConstraints="NO" id="GyL-hQ-krI">
+                                <rect key="frame" x="16" y="40" width="382.66666666666669" height="372.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GyL-hQ-krI" secondAttribute="height" multiplier="344:335" id="B6c-dL-h7A"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpy-2c-1bJ">
+                                <rect key="frame" x="20" y="468.33333333333337" width="374" height="57.333333333333371"/>
+                                <string key="text">Set up your profile for potential clients to view. Make sure to include a training location, hourly rate, &amp; which sport or fitness method you train. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1488880128" green="0.33255208330000002" blue="0.23967420380000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GyL-hQ-krI" firstAttribute="leading" secondItem="Tqw-q6-Ysl" secondAttribute="leading" constant="15.5" id="1Lg-2h-rrF"/>
+                            <constraint firstItem="GyL-hQ-krI" firstAttribute="centerX" secondItem="Tqw-q6-Ysl" secondAttribute="centerX" id="BRw-mZ-a1l"/>
+                            <constraint firstItem="hpy-2c-1bJ" firstAttribute="trailing" secondItem="Tqw-q6-Ysl" secondAttribute="trailingMargin" id="JxS-h0-iCj"/>
+                            <constraint firstItem="hpy-2c-1bJ" firstAttribute="top" secondItem="DMs-Bc-Nt3" secondAttribute="bottom" constant="8" id="RuE-cz-I6j"/>
+                            <constraint firstItem="GyL-hQ-krI" firstAttribute="top" secondItem="nxK-RM-1bF" secondAttribute="bottom" constant="20" id="UgA-W7-02T"/>
+                            <constraint firstItem="hpy-2c-1bJ" firstAttribute="leading" secondItem="Tqw-q6-Ysl" secondAttribute="leadingMargin" id="V6D-tV-opz"/>
+                            <constraint firstItem="hpy-2c-1bJ" firstAttribute="centerX" secondItem="Tqw-q6-Ysl" secondAttribute="centerX" id="czZ-zJ-GxV"/>
+                            <constraint firstAttribute="trailing" secondItem="GyL-hQ-krI" secondAttribute="trailing" constant="15.5" id="fFL-Ij-ryo"/>
+                            <constraint firstItem="DMs-Bc-Nt3" firstAttribute="centerX" secondItem="Tqw-q6-Ysl" secondAttribute="centerX" id="jR7-eY-mQ4"/>
+                            <constraint firstItem="DMs-Bc-Nt3" firstAttribute="top" secondItem="GyL-hQ-krI" secondAttribute="bottom" constant="22" id="pzI-UV-XT4"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Y6P-x3-zlz"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNO-bc-Yb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1844" y="1459.52023988006"/>
+        </scene>
+        <!--How It Works View Controller2-->
+        <scene sceneID="xp2-bi-EQn">
+            <objects>
+                <viewController storyboardIdentifier="StepTwoTrainer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KZG-fZ-ebR" customClass="HowItWorksViewController2" customModule="TrainersSociety" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ekh-2O-RAo"/>
+                        <viewControllerLayoutGuide type="bottom" id="HIg-zp-4FF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V4u-LH-w6n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="TrainerHIW2" translatesAutoresizingMaskIntoConstraints="NO" id="Fzf-80-wZZ">
+                                <rect key="frame" x="20" y="40" width="374" height="363.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fzf-80-wZZ" secondAttribute="height" multiplier="343:333" id="tLl-8x-tNa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2l-oa-aSB">
+                                <rect key="frame" x="43" y="457" width="329" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="2jR-Rm-Q39"/>
+                                    <constraint firstAttribute="width" constant="329" id="XQr-ca-4Pb"/>
+                                </constraints>
+                                <string key="text">Go into the Availability section and set up the dates, times, and location(s) you’re available to train so clients can start booking sessions with you.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2. SETUP AVAILABILITY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFs-vU-Xba">
+                                <rect key="frame" x="41" y="421" width="333" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="333" id="LPR-iZ-75E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1488880128" green="0.33255208330000002" blue="0.23967420380000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="f2l-oa-aSB" firstAttribute="leading" secondItem="V4u-LH-w6n" secondAttribute="leadingMargin" constant="23" id="5z1-q6-Xn9"/>
+                            <constraint firstItem="f2l-oa-aSB" firstAttribute="top" secondItem="BFs-vU-Xba" secondAttribute="bottom" constant="8" id="FVh-0H-HDD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f2l-oa-aSB" secondAttribute="trailing" constant="22" id="G6W-gT-EKb"/>
+                            <constraint firstItem="Fzf-80-wZZ" firstAttribute="top" secondItem="ekh-2O-RAo" secondAttribute="bottom" constant="20" id="Jx2-K4-dqx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Fzf-80-wZZ" secondAttribute="leading" id="QBN-Jy-IKb"/>
+                            <constraint firstItem="Fzf-80-wZZ" firstAttribute="centerX" secondItem="V4u-LH-w6n" secondAttribute="centerX" id="Vyd-j2-DKL"/>
+                            <constraint firstItem="BFs-vU-Xba" firstAttribute="top" secondItem="Fzf-80-wZZ" secondAttribute="bottom" constant="22" id="cc4-LM-nla"/>
+                            <constraint firstItem="f2l-oa-aSB" firstAttribute="centerX" secondItem="V4u-LH-w6n" secondAttribute="centerX" constant="0.5" id="jUF-L9-psO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fzf-80-wZZ" secondAttribute="trailing" id="k9p-dY-fhQ"/>
+                            <constraint firstItem="BFs-vU-Xba" firstAttribute="centerX" secondItem="V4u-LH-w6n" secondAttribute="centerX" id="sXo-O1-pka"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="7Ge-k0-iSE"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWM-dD-wXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1092" y="1459.52023988006"/>
+        </scene>
+        <!--How It Works View Controller2-->
+        <scene sceneID="iGz-RI-bUK">
+            <objects>
+                <viewController storyboardIdentifier="StepThreeTrainer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WZE-FZ-MEK" customClass="HowItWorksViewController2" customModule="TrainersSociety" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IEa-4v-A3S"/>
+                        <viewControllerLayoutGuide type="bottom" id="as6-jr-Fya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xJn-IW-xT6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. CHECK SESSIONS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qf-Co-TOk">
+                                <rect key="frame" x="62.666666666666657" y="428.66666666666669" width="289" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="mVu-q9-EIe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check your profile and make sure to accept or decline any pending training sessions you may have." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nH-np-p4c">
+                                <rect key="frame" x="16" y="466" width="383" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="1ia-5I-24R"/>
+                                    <constraint firstAttribute="width" constant="383" id="4fb-F5-NfR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="TrainerHIW3" translatesAutoresizingMaskIntoConstraints="NO" id="ktx-zd-wig">
+                                <rect key="frame" x="20" y="40" width="374" height="363.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ktx-zd-wig" secondAttribute="height" multiplier="343:333" id="EBO-BZ-t1H"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1488880128" green="0.33255208330000002" blue="0.23967420380000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6nH-np-p4c" secondAttribute="trailing" constant="15" id="Dr7-pk-Nh8"/>
+                            <constraint firstItem="6nH-np-p4c" firstAttribute="centerX" secondItem="xJn-IW-xT6" secondAttribute="centerX" id="Dup-us-Jy8"/>
+                            <constraint firstItem="ktx-zd-wig" firstAttribute="trailing" secondItem="xJn-IW-xT6" secondAttribute="trailingMargin" id="Fub-fe-YNF"/>
+                            <constraint firstItem="8Qf-Co-TOk" firstAttribute="top" secondItem="ktx-zd-wig" secondAttribute="bottom" constant="25" id="IkK-uZ-CQH"/>
+                            <constraint firstItem="6nH-np-p4c" firstAttribute="top" secondItem="8Qf-Co-TOk" secondAttribute="bottom" constant="11" id="Jz8-EN-Gcs"/>
+                            <constraint firstItem="ktx-zd-wig" firstAttribute="leading" secondItem="xJn-IW-xT6" secondAttribute="leadingMargin" id="P2f-cO-vEM"/>
+                            <constraint firstItem="ktx-zd-wig" firstAttribute="top" secondItem="IEa-4v-A3S" secondAttribute="bottom" constant="20" id="ldx-q3-GhH"/>
+                            <constraint firstItem="6nH-np-p4c" firstAttribute="leading" secondItem="xJn-IW-xT6" secondAttribute="leading" constant="16" id="tAg-H5-YGb"/>
+                            <constraint firstItem="8Qf-Co-TOk" firstAttribute="centerX" secondItem="xJn-IW-xT6" secondAttribute="centerX" id="tKH-AT-bXb"/>
+                            <constraint firstItem="ktx-zd-wig" firstAttribute="centerX" secondItem="xJn-IW-xT6" secondAttribute="centerX" id="xNO-Mh-DwX"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="AvD-Q8-DyT"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07o-io-cLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356.52173913043481" y="1458.4239130434785"/>
+        </scene>
+        <!--How It Works View Controller2-->
+        <scene sceneID="Z1h-H3-IyK">
+            <objects>
+                <viewController storyboardIdentifier="StepFourTrainer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1ae-Mp-ALZ" customClass="HowItWorksViewController2" customModule="TrainersSociety" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ngH-Jk-ciR"/>
+                        <viewControllerLayoutGuide type="bottom" id="gah-7d-Nkw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Laj-BZ-wvR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. SHOW UP READY TO TRAIN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beA-st-UrQ">
+                                <rect key="frame" x="62.666666666666657" y="415.66666666666669" width="289" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="wca-ME-N2E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="UserHIW3" translatesAutoresizingMaskIntoConstraints="NO" id="qDJ-XE-GHs">
+                                <rect key="frame" x="20" y="40" width="374" height="369.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qDJ-XE-GHs" secondAttribute="height" multiplier="343:339" id="U2y-82-0pL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect with your customers before a session and discuss training, payment, or any changes that may occur prior to the workout." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAY-bM-501">
+                                <rect key="frame" x="20" y="452.66666666666663" width="374" height="64.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1488880128" green="0.33255208330000002" blue="0.23967420380000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qDJ-XE-GHs" firstAttribute="centerX" secondItem="Laj-BZ-wvR" secondAttribute="centerX" id="2Pw-5N-SSu"/>
+                            <constraint firstItem="qDJ-XE-GHs" firstAttribute="top" secondItem="ngH-Jk-ciR" secondAttribute="bottom" constant="20" id="2TY-CX-ywT"/>
+                            <constraint firstItem="OAY-bM-501" firstAttribute="centerX" secondItem="Laj-BZ-wvR" secondAttribute="centerX" id="6dq-oN-Xuv"/>
+                            <constraint firstItem="qDJ-XE-GHs" firstAttribute="trailing" secondItem="Laj-BZ-wvR" secondAttribute="trailingMargin" id="ESg-x2-FCE"/>
+                            <constraint firstItem="OAY-bM-501" firstAttribute="leading" secondItem="Laj-BZ-wvR" secondAttribute="leadingMargin" id="IHL-jQ-HXI"/>
+                            <constraint firstItem="beA-st-UrQ" firstAttribute="top" secondItem="qDJ-XE-GHs" secondAttribute="bottom" constant="6" id="Qxy-1u-lCA"/>
+                            <constraint firstItem="qDJ-XE-GHs" firstAttribute="leading" secondItem="Laj-BZ-wvR" secondAttribute="leadingMargin" id="dgI-4A-B1q"/>
+                            <constraint firstItem="OAY-bM-501" firstAttribute="top" secondItem="beA-st-UrQ" secondAttribute="bottom" constant="11" id="rPD-Em-Yrb"/>
+                            <constraint firstItem="beA-st-UrQ" firstAttribute="centerX" secondItem="Laj-BZ-wvR" secondAttribute="centerX" id="rVF-MA-4O9"/>
+                            <constraint firstItem="OAY-bM-501" firstAttribute="trailing" secondItem="Laj-BZ-wvR" secondAttribute="trailingMargin" id="yhs-g7-fY9"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="tak-6a-9gl"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5p-L3-fGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="356" y="1459.52023988006"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TrainerHIW1" width="326" height="480"/>
+        <image name="TrainerHIW2" width="750" height="1334"/>
+        <image name="TrainerHIW3" width="305" height="480"/>
+        <image name="UserHIW1" width="750" height="1334"/>
+        <image name="UserHIW2" width="750" height="1334"/>
+        <image name="UserHIW3" width="6000" height="4000"/>
+        <image name="blkm" width="44" height="45"/>
+    </resources>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</document>

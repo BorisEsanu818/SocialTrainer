@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8P3-KM-zl9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="l5g-re-q7U">
+            <objects>
+                <viewController id="8P3-KM-zl9" customClass="MainViewController" customModule="TrainersSociety" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G2I-ph-6D7"/>
+                        <viewControllerLayoutGuide type="bottom" id="UlT-NJ-AIr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xMi-Si-Yh9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="OPp-tz-cXs" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="wr8-q9-qlJ"/>
+                        <segue destination="8oa-jW-Fv4" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="FqE-Ej-iBI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Q9-oA-fP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="-296"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="NOc-Hq-1sd">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" id="8oa-jW-Fv4" customClass="MenuViewController" customModule="TrainersSociety" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FGj-8r-pE9"/>
+                        <viewControllerLayoutGuide type="bottom" id="frV-Nc-UtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rse-wy-qdd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWX-Nw-EAr">
+                                <rect key="frame" x="41" y="270" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <state key="normal" title="SEARCH">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="C4y-c3-B7F" kind="custom" identifier="" customClass="SWRevealViewControllerSeguePushController" id="3Kc-OL-G3L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp6-VD-zDZ">
+                                <rect key="frame" x="41" y="353" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <state key="normal" title="SESSIONS">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zNC-OS-ii8" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="RfP-K4-BnA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDf-wQ-aQh">
+                                <rect key="frame" x="42" y="481" width="133" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <state key="normal" title="GIVE FEEDBACK">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="e8y-Mt-Xwi" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="JG6-Tc-Bsi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrN-1r-imf">
+                                <rect key="frame" x="21" y="587" width="214" height="60"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.72941176470588232" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8tc-eM-Mzu"/>
+                                    <constraint firstAttribute="width" secondItem="TrN-1r-imf" secondAttribute="height" multiplier="107:30" id="acK-03-ARP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                <state key="normal" title="BECOME A TRAINER">
+                                    <color key="titleColor" red="0.99189550140000005" green="0.99358534970000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="MA8-m2-hqO" kind="custom" identifier="" customClass="SWRevealViewControllerSeguePushController" id="y7M-Xg-sV1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWz-Kd-WS9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="204"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.72941176470588232" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="UNW-Gp-nOf"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89W-Rw-NTS">
+                                <rect key="frame" x="41" y="310" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <state key="normal" title="HOW IT WORKS">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cTv-dU-kt5" kind="custom" identifier="hiw" customClass="SWRevealViewControllerSeguePushController" id="AQ9-Gy-bUt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wI-qH-yaB">
+                                <rect key="frame" x="41" y="440" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <state key="normal" title="SETTINGS">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aWW-Te-kGi" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="fO5-Hl-hMC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="current user" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzv-bf-Hg4">
+                                <rect key="frame" x="31" y="158" width="165" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default-user-icon" translatesAutoresizingMaskIntoConstraints="NO" id="sBv-b5-rc3">
+                                <rect key="frame" x="58" y="33" width="111" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="zPosition">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xy-vf-kDm">
+                                <rect key="frame" x="41" y="396" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <state key="normal" title="MESSAGES">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8Oj-eD-f8J" kind="custom" identifier="" customClass="SWRevealViewControllerSeguePushController" id="Ilt-AH-YVW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hc-T9-NqL">
+                                <rect key="frame" x="41" y="229" width="67" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hKq-vd-DFb" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="8Po-vm-nQ6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1T-F2-p8N">
+                                <rect key="frame" x="41" y="269" width="108" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <state key="normal" title="AVAILABILITY">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="owR-WG-EJI" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="l4N-Uf-Zkt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TrN-1r-imf" secondAttribute="trailing" constant="124" id="6oR-uG-Ty4"/>
+                            <constraint firstItem="frV-Nc-UtV" firstAttribute="top" secondItem="TrN-1r-imf" secondAttribute="bottom" constant="20" id="9Yr-QS-Bmt"/>
+                            <constraint firstItem="EWz-Kd-WS9" firstAttribute="leading" secondItem="Rse-wy-qdd" secondAttribute="leading" id="EIP-oY-alK"/>
+                            <constraint firstItem="EWz-Kd-WS9" firstAttribute="top" secondItem="Rse-wy-qdd" secondAttribute="top" id="I0i-bg-VDC"/>
+                            <constraint firstItem="TrN-1r-imf" firstAttribute="leading" secondItem="Rse-wy-qdd" secondAttribute="leadingMargin" constant="5" id="eo5-0d-0Ov"/>
+                            <constraint firstAttribute="trailing" secondItem="EWz-Kd-WS9" secondAttribute="trailing" id="wge-OY-J5k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y8A-oe-bsb"/>
+                    <connections>
+                        <outlet property="availabilityButton" destination="k1T-F2-p8N" id="Pfo-gf-KD4"/>
+                        <outlet property="becomeTrainerButton" destination="TrN-1r-imf" id="X0P-32-Px1"/>
+                        <outlet property="profilePicture" destination="sBv-b5-rc3" id="bsw-Cu-hxp"/>
+                        <outlet property="searchButton" destination="rWX-Nw-EAr" id="cC1-4E-sZZ"/>
+                        <outlet property="username" destination="pzv-bf-Hg4" id="APK-0g-8rx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJB-Cy-6je" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ixk-RC-vyn">
+                    <connections>
+                        <action selector="didTapProfilePicture:" destination="8oa-jW-Fv4" id="Z0w-W3-pVc"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2880.8000000000002" y="-296.40179910044981"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="TZc-K3-B5s">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dashboard" id="hKq-vd-DFb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GaM-0S-6iY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3417" y="-550"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="o6a-rQ-AGO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="C4y-c3-B7F" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64E-qS-DWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3448" y="-494"/>
+        </scene>
+        <!--Availability-->
+        <scene sceneID="jy6-NM-jUv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Availability" id="owR-WG-EJI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYU-bI-hrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="-495"/>
+        </scene>
+        <!--HowItWorks-->
+        <scene sceneID="EEb-fy-85H">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HowItWorks" id="cTv-dU-kt5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ok7-CC-tTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3477" y="-427"/>
+        </scene>
+        <!--Sessions-->
+        <scene sceneID="N3E-yp-4tY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Sessions" id="zNC-OS-ii8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWD-IS-UC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3493" y="-358"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="MWx-dQ-wK7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="8Oj-eD-f8J" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abS-Gc-QRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3513" y="-297"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="ipe-TW-RtS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="aWW-Te-kGi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RbM-KI-YQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3505" y="-227"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="uni-ZH-DEX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contact" id="e8y-Mt-Xwi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1y-r4-SUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3504" y="-139"/>
+        </scene>
+        <!--BecomeATrainer-->
+        <scene sceneID="J2o-l7-gVD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BecomeATrainer" id="MA8-m2-hqO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ip-Lg-oso" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3501" y="-72"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="DFy-pC-oNp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dashboard" id="OPp-tz-cXs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hT2-kg-lWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default-user-icon" width="200" height="200"/>
+    </resources>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</document>
